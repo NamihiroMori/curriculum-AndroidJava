@@ -21,6 +21,7 @@ public class kart extends AppCompatActivity {
 
         //3-1 intentを使用してデータを受け取る処理を記述してください。
         /*ここに記述*/
+        Intent intent = getIntent();
 
         String num1 = intent.getStringExtra("DATA1");
         String num2 = intent.getStringExtra("DATA2");
@@ -50,11 +51,11 @@ public class kart extends AppCompatActivity {
         String u = String.valueOf(total_price);
 
         //3-2 金額と個数を適切なテキストビューにセットしてください。
-        [ここを修正].setText(u);
-        [ここを修正].setText(num1);
-        [ここを修正].setText(num2);
-        [ここを修正].setText(s);
-        [ここを修正].setText(t);
+        all_price.setText(u);
+        t_price.setText(num1);
+        t_price2.setText(num2);
+        price.setText(s);
+        price2.setText(t);
 
         //戻るボタンを押した時の処理
         button.setOnClickListener((View v) -> {

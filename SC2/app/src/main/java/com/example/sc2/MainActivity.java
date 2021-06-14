@@ -18,15 +18,18 @@ public class MainActivity extends AppCompatActivity {
         //ボタンを設定
         //1-1 activity_main.xmlに用意されているボタンを宣言しなさい。
         /*ここに記述*/
+        Button button1 = findViewById(R.id.button1);
         
         //ボタンに対するリスナを設定
         button1.setOnClickListener((View v) -> {
                 //1-2 intentクラスを生成し、遷移先画面を指定してください。
                 //point 第1引数はgetApplication()を使用してください。
                 /*ここに記述*/
+            Intent intent = new Intent(MainActivity.this, Chumon.class);
 
                 //1-3 1-1で生成したintentクラスを使用し、遷移先の画面を起動する処理を記述してください
                 /*ここに記述*/
+            startActivity(intent);
                 
         });
     }

@@ -56,10 +56,14 @@ public class Chumon extends AppCompatActivity {
         //ボタンの設定(2個)
         /*ここに記述
         ここに記述*/
+        Button button2 = findViewById(R.id.button2);
+        Button button3 = findViewById(R.id.button3);
 
         //Spinnerオブジェクトを取得(2個)
         /*ここに記述
         ここに記述*/
+        Spinner spinner1 = findViewById(R.id.spinner1);
+        Spinner spinner2 = findViewById(R.id.spinner2);
 
         //spinnerを配列に追加してまとめて処理
         arr.add(spinner1);
@@ -82,6 +86,9 @@ public class Chumon extends AppCompatActivity {
                 //2-2 上で用意されている金額算出用のメソッドを呼び出しなさい。下にもあります！
                 //point 第1、第2引数にはフィールド変数、第3引数はstring.xmlを確認し、回鍋肉の金額を入れてください。
                 /*ここに記述*/
+                String strPrice1 = getString(R.string.price1).replace("円", "");
+                int price1 = Integer.parseInt(strPrice1);
+                math(s1, i, price1);
 
                 //合計金額をStringに変換
                 String s = String.valueOf(num);
@@ -112,6 +119,9 @@ public class Chumon extends AppCompatActivity {
                 //2-2 金額算出用のメソッドの呼びだし
                 //第３引数にはstring.xmlを確認し唐揚げの金額を入れてください。
                 /*ここに記述*/
+                String strPrice2 = getString(R.string.price2).replace("円", "");
+                int price2 = Integer.parseInt(strPrice2);
+                math(s2, i, price2);
 
                 String s = String.valueOf(num);
 
@@ -132,16 +142,15 @@ public class Chumon extends AppCompatActivity {
                 String s4 = String.valueOf(s2);
 
                 //intentクラスの生成
-                final Intent intent = new Intent(getApplication(), com.example.sc2.Kart.class);
+                final Intent intent = new Intent(getApplication(), com.example.sc2.kart.class);
 
                 //spinnerの値をkart.javaに渡しなさい。
                 //注意 渡す際のキーは上からDATA1、DATA2にしてください。
-                intent.putExtra([ここに記述]);
-                intent.putExtra([ここに記述]);
+                intent.putExtra("DATA1", s3);
+                intent.putExtra("DATA2", s4);
 
                 //遷移先画面の起動
                 startActivity(intent);
-            }
         });
 
         //クリアボタンの処理

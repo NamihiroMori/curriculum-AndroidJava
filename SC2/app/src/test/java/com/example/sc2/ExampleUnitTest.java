@@ -1,4 +1,4 @@
-package com.websarva.wings.android.sc2;
+package com.example.sc2;
 
 import org.junit.Test;
 
