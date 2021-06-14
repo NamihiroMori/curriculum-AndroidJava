@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">SC2</string>
+    <string name="title">2章チェックテスト</string>
+    <string name="button1">進む</string>
+    <string name="button2">注文を確定</string>
+    <string name="button3">注文をクリア</string>
+    <string name="total_price">合計金額</string>
+    <string name="order1">回鍋肉</string>
+    <string name="price1">800円</string>
+    <string name="order2">唐揚げ</string>
+    <string name="price2">650円</string>
+    <string-array name="spinner1">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+    <string name="kart1">以下の商品を注文しました。</string>
+    <string name="back_button">リストに戻る</string>
+</resources>
